@@ -1,0 +1,48 @@
+ table{
+        margin: 0;
+        padding: 40px;
+        background: linear-gradient(120deg, red ,green,blue,pink,orange,yellow,white,rgb(0, 255, 255));
+        background-size: 600% 600%;
+        animation: grad 10s ease infinite;
+        }
+        @keyframes grad{
+            0%,100%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+        }
+        .container{
+            box-shadow: 8px 32px 23px black;
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            background: linear-gradient(120deg, red ,green,blue,pink,orange,yellow,white,rgb(0, 255, 255));
+        }
+        th,td{
+            padding: 15px;
+            background: linear-gradient(120deg,blue,pink,yellow,white,rgb(0, 255, 255));
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(218, 41, 70);
+        }
+
+        div:hover{
+            cursor: pointer;
+        }
+        thead th:hover{
+            font-size: x-large;
+            font-family: cursive;
+            background-color: aqua;
+        }
+        tbody td:hover{
+            transition: transform 3s ease;
+            transform: rotateX(360deg)
+        }
+    
